@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<button class="music-button" onclick="toggleMusic()">
+    🎵 Music
+</button>
+<body>
+
+    <!-- Floating Balloons -->
+    <div class="balloons">
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">✨ A Special Day ✨</p>
+
+            <h1>
+                Happy Birthday,
+                <span>Ayesha!</span> 🎂
+            </h1>
+
+            <p class="intro">
+                Today is all about celebrating you,
+                your beautiful heart, and all the happiness
+                you bring into the lives of others.
+            </p>
+
+            <button onclick="startCelebration()">
+                🎁 Start the Celebration
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Photo Section -->
+    <section class="memories">
+
+        <p class="section-label">📸 MEMORIES</p>
+
+        <h2>Beautiful Moments</h2>
+
+        <p class="section-text">
+            Some moments become memories that stay with forever.
+        </p>
+
+        <div class="gallery">
+
+            <img src="images/memory 1.jpeg" alt="Beautiful memory">
+
+            <img src="images/memory 2.jpeg" alt="Beautiful memory">
+
+            <img src="images/memory 3.jpeg" alt="Beautiful memory">
+
+        </div>
+
+    </section>
+
+
+    <!-- Birthday Letter -->
+    <section class="letter">
+
+        <div class="letter-box">
+
+            <div class="envelope">💌</div>
+
+            <p class="section-label">A LETTER FOR YOU</p>
+
+            <h2>From My Heart ❤️</h2>
+
+            <p>
+                On your special day, I just want you to know
+                how much you mean to me.
+            </p>
+
+            <p>
+                May your life always be filled with happiness,
+                beautiful memories, success, and people who
+                genuinely care about you.
+            </p>
+
+            <p>
+                Keep smiling, keep believing in yourself,
+                and never stop being the amazing person you are.
+            </p>
+
+            <p class="signature">
+                With lots of love ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Birthday Cake -->
+    <section class="cake-section">
+
+        <p class="section-label">🎂 MAKE A WISH</p>
+
+        <h2>It's Cake Time!</h2>
+
+        <div class="cake">
+            🎂
+        </div>
+
+        <p>
+            Close your eyes, make a wish,
+            and blow out the candles! ✨
+        </p>
+
+        <button onclick="blowCandles()">
+            🕯️ Make a Wish
+        </button>
+
+    </section>
+
+
+    <!-- Special Wishes -->
+    <section class="wishes">
+
+        <p class="section-label">✨ BIRTHDAY WISHES</p>
+
+        <h2>My Wishes For You</h2>
+
+        <div class="wish-container">
+
+            <div class="wish-card">
+                ❤️
+                <h3>Happiness</h3>
+                <p>
+                    May your days always be filled
+                    with genuine happiness and laughter.
+                </p>
+            </div>
+
+            <div class="wish-card">
+                🌟
+                <h3>Success</h3>
+                <p>
+                    May every dream you chase bring
+                    you closer to something amazing.
+                </p>
+            </div>
+
+            <div class="wish-card">
+                🌸
+                <h3>Beautiful Moments</h3>
+                <p>
+                    May the coming year give you
+                    countless memories to treasure.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Why You're Special -->
+    <section class="special">
+
+        <p class="section-label">❤️ JUST FOR YOU</p>
+
+        <h2>Why You're Special</h2>
+
+        <div class="special-list">
+
+            <p>✨ Your kindness</p>
+            <p>💖 Your beautiful heart</p>
+            <p>😊 Your smile</p>
+            <p>🌟 Your positive energy</p>
+            <p>🤝 The way you care about others</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Final Celebration -->
+    <section class="final">
+
+        <div id="confetti"></div>
+
+        <p>🎉 TODAY IS YOUR DAY 🎉</p>
+
+        <h1>
+            Happy Birthday,
+            <span>Sarah!</span> ❤️
+        </h1>
+
+        <p>
+            May this new chapter of your life
+            be your most beautiful one yet.
+        </p>
+
+        <button onclick="startCelebration()">
+            🎊 Celebrate Again
+        </button>
+
+    </section>
+
+
+    <!-- Music -->
+    <audio id="birthdayMusic" loop>
+        <source src="music/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

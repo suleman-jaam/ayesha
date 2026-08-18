@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #fff8fc;
+    color: #3b2635;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.music-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    margin: 0;
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 600px) {
+    .music-button {
+        top: 12px;
+        right: 12px;
+        padding: 8px 14px;
+        font-size: 0.75rem;
+    }
+}
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+    background:
+        radial-gradient(circle at top, #ffd6e8, transparent 45%),
+        linear-gradient(135deg, #fff0f6, #f9e8ff);
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 750px;
+    z-index: 2;
+    animation: fadeUp 1.2s ease;
+}
+
+.small-title,
+.section-label {
+    color: #d94f86;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 9vw, 6rem);
+    line-height: 1;
+    margin-bottom: 30px;
+    color: #402538;
+}
+
+.hero h1 span,
+.final h1 span {
+    color: #d94f86;
+}
+
+.intro {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #725568;
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    background: #d94f86;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(217, 79, 134, 0.3);
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(217, 79, 134, 0.4);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================
+   BALLOONS
+========================= */
+
+.balloons span {
+    position: fixed;
+    bottom: -100px;
+    font-size: 45px;
+    z-index: 10;
+    animation: floatBalloon 12s linear infinite;
+    pointer-events: none;
+}
+
+.balloons span:nth-child(1) {
+    left: 8%;
+    animation-delay: 0s;
+}
+
+.balloons span:nth-child(2) {
+    left: 30%;
+    animation-delay: 3s;
+}
+
+.balloons span:nth-child(3) {
+    left: 65%;
+    animation-delay: 6s;
+}
+
+.balloons span:nth-child(4) {
+    left: 88%;
+    animation-delay: 1.5s;
+}
+
+
+/* =========================
+   MEMORIES
+========================= */
+
+.memories {
+    background: white;
+}
+
+h2 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    margin-bottom: 15px;
+    color: #402538;
+}
+
+.section-text {
+    color: #806574;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(60, 30, 50, 0.12);
+    transition: 0.5s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.04) rotate(1deg);
+}
+
+
+/* =========================
+   LETTER
+========================= */
+
+.letter {
+    background: #fff0f6;
+}
+
+.letter-box {
+    max-width: 700px;
+    padding: 55px 45px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(100, 40, 70, 0.1);
+}
+
+.envelope {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.letter-box p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #725568;
+    margin-bottom: 20px;
+}
+
+.signature {
+    font-weight: bold;
+    color: #d94f86 !important;
+}
+
+
+/* =========================
+   CAKE
+========================= */
+
+.cake-section {
+    background:
+        radial-gradient(circle at center, #ffe1ef, transparent 55%),
+        #fff8fc;
+}
+
+.cake {
+    font-size: 130px;
+    margin: 30px 0;
+    animation: cakeFloat 3s ease-in-out infinite;
+}
+
+
+/* =========================
+   WISHES
+========================= */
+
+.wishes {
+    background: white;
+}
+
+.wish-container {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.wish-card {
+    padding: 40px 25px;
+    border-radius: 25px;
+    background: #fff5fa;
+    font-size: 2rem;
+    transition: 0.4s ease;
+}
+
+.wish-card:hover {
+    transform: translateY(-8px);
+}
+
+.wish-card h3 {
+    font-size: 1.3rem;
+    margin: 15px 0;
+    color: #402538;
+}
+
+.wish-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #806574;
+}
+
+
+/* =========================
+   SPECIAL
+========================= */
+
+.special {
+    background: #402538;
+    color: white;
+}
+
+.special h2 {
+    color: white;
+}
+
+.special .section-label {
+    color: #ff9dc4;
+}
+
+.special-list {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.special-list p {
+    padding: 15px 25px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    position: relative;
+    min-height: 80vh;
+    background:
+        radial-gradient(circle at center, #f7c4dc, transparent 55%),
+        linear-gradient(135deg, #fff0f6, #f0ddff);
+    overflow: hidden;
+}
+
+.final h1 {
+    max-width: 900px;
+    font-size: clamp(3rem, 9vw, 6rem);
+    line-height: 1;
+    margin: 20px 0 30px;
+}
+
+.final > p {
+    max-width: 600px;
+    color: #725568;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cakeFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes floatBalloon {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-55vh) rotate(10deg);
+    }
+
+    100% {
+        transform: translateY(-120vh) rotate(-10deg);
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    section {
+        padding: 70px 18px;
+    }
+
+    .hero h1 {
+        font-size: 3.3rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img {
+        height: 300px;
+    }
+
+    .wish-container {
+        grid-template-columns: 1fr;
+    }
+
+    .letter-box {
+        padding: 40px 25px;
+    }
+
+    .letter-box p {
+        font-size: 1rem;
+    }
+
+    .cake {
+        font-size: 100px;
+    }
+
+    .final h1 {
+        font-size: 3.3rem;
+    }
+
+    .balloons span {
+        font-size: 35px;
+    }
+}
+
+
+/* =========================
+   REDUCE MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
