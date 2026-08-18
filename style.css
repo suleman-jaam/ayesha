@@ -318,10 +318,13 @@ h2 {
 /* =========================
    FINAL
 ========================= */
-.final-content {
-    max-width: 750px;
-    position: relative;
-    z-index: 2;
+.final h1 {
+    max-width: 900px;
+    font-size: clamp(4rem, 12vw, 8rem);
+    line-height: 1;
+    margin: 20px 0 30px;
+    color: #d94f86;
+    font-weight: 700;
 }
 
 .final-signature {
@@ -332,38 +335,13 @@ h2 {
 }
 
 .final-signature span {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #806574;
 }
 
 .final-signature strong {
-    font-size: 1.8rem;
-    color: #d94f86;
-    font-family: "Segoe Script", cursive;
+    font-size: 2rem;
 }
-.final {
-    position: relative;
-    min-height: 80vh;
-    background:
-        radial-gradient(circle at center, #f7c4dc, transparent 55%),
-        linear-gradient(135deg, #fff0f6, #f0ddff);
-    overflow: hidden;
-}
-
-.final h1 {
-    max-width: 900px;
-    font-size: clamp(3rem, 9vw, 6rem);
-    line-height: 1;
-    margin: 20px 0 30px;
-}
-
-.final > p {
-    max-width: 600px;
-    color: #725568;
-    font-size: 1.1rem;
-    line-height: 1.7;
-}
-
 
 /* =========================
    ANIMATIONS
