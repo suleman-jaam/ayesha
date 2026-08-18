@@ -318,7 +318,29 @@ h2 {
 /* =========================
    FINAL
 ========================= */
+.final-content {
+    max-width: 750px;
+    position: relative;
+    z-index: 2;
+}
 
+.final-signature {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.final-signature span {
+    font-size: 1rem;
+    color: #806574;
+}
+
+.final-signature strong {
+    font-size: 1.8rem;
+    color: #d94f86;
+    font-family: "Segoe Script", cursive;
+}
 .final {
     position: relative;
     min-height: 80vh;
